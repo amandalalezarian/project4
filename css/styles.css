@@ -1,0 +1,69 @@
+h1, h3, h4 {
+  font-family: "Georgia";
+    font-style: italic;
+}
+
+.header {
+  margin-left: 20px;
+}
+
+p {
+  font-family: "Georgia";
+  font-size: 16px;
+}
+
+.topline{
+  margin-top: 0px;
+  margin-bottom: 10px;
+  border: 1px solid black;
+}
+
+.line{
+  border: 1px solid #e2e2e2;
+  margin-bottom: 10px;
+}
+
+.header {
+  font-size: 13px;
+  font-family: "Georgia serif";
+}
+
+.attribution {
+  font-size: 11px;
+  font-family: "Georgia serif";
+}
+
+.topfive {
+  border: 2px solid #e2e2e2;
+  padding-top: -10px;
+  padding-left: 15px;
+  padding-bottom: 10px;
+}
+
+.diabetes {
+  border: 2px solid #e2e2e2;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-bottom: 10px;
+  margin-top: 50px;
+}
+
+.accidents {
+  border: 2px solid #e2e2e2;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-bottom: 10px;
+  margin-top: 50px;
+}
+
+#basicline {
+  margin-bottom: 25px;
+}
+
+.footer {
+    display: inline-block;
+}
+
+.tooltiptext{
+    display: none;
+}
