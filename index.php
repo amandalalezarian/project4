@@ -20,11 +20,12 @@
    </style>
 </head>
 
-<body onload="map()">
+<body onload="initMap()">
   <div class="container">
+    <div class="row">
       <h1>Paris Attacks</h1>
+      <p>information about attacks</p>
   <!-- <a href="http://api.nytimes.com/svc/search/v2/articlesearch">Find Articles</a> -->
-  <div class="row">
     <?php
     ini_set('display_errors', 1);
     require_once('TwitterAPIExchange.php');
@@ -84,13 +85,15 @@
       <a href="http://jelled.com/instagram/lookup-user-id"></a>
     </div>
   </div>
-  <div id="map"></div>
+  <div class="markers">
+    <p>Click on the map markers to read about each attack area</p>
+    <div id="map"></div>
+  </div>
   <div>
     <h3>In the News</h3>
     <p>Read more about the Paris Attacks in the <a href="http://www.nytimes.com/news-event/attacks-in-paris">New York Times</a><p>
     <div id="nyt"></div>
   </div>
-</div>
 </div>
 </body>
 </html>
