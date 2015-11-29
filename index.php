@@ -8,9 +8,8 @@
   <script src="nyt.js" type="text/javascript"></script>
   <script src="instagram.js" type="text/javascript"></script>
   <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-  <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCvXjwRiZPKaa4P17MqaRuY3AGn1MzYA2Y&callback=initMap">
+  <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCvXjwRiZPKaa4P17MqaRuY3AGn1MzYA2Y&callback=initMap"></script>
   <script src="tweetLinkIt.js"></script>
-  <script type="text/javascript">
   <script>function pageComplete(){
        $('.tweet').tweetLinkify();
    }
@@ -21,7 +20,7 @@
    </style>
 </head>
 
-<body onload="initializeMap()">
+<body onload="map()">
   <div class="container">
       <h1>Paris Attacks</h1>
   <!-- <a href="http://api.nytimes.com/svc/search/v2/articlesearch">Find Articles</a> -->
@@ -91,7 +90,6 @@
     <p>Read more about the Paris Attacks in the <a href="http://www.nytimes.com/news-event/attacks-in-paris">New York Times</a><p>
     <div id="nyt"></div>
   </div>
-  <div id="map"></div>
 </div>
 </div>
 </body>
