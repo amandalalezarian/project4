@@ -1,11 +1,11 @@
 var map;
 function initMap() {
-  var myLatLng = {lat: 48.8567, lng: 2.3508};
+  var myLatLng = {lat: 48.8675908, lng: 2.3629565};
 
 
   map = new google.maps.Map(document.getElementById('map'), {
     center: myLatLng,
-    zoom: 16,
+    zoom: 14,
     mapTypeId: google.maps.MapTypeId.HYBRID,
   });
 
@@ -118,6 +118,21 @@ var content7 = '<div id="content">'+
     '</p>'+
     '</div>'+
     '</div>';
+
+    var content8 = '<div id="content">'+
+        '<div id="siteNotice">'+
+        '</div>'+
+        '<h1 id="firstHeading" class="firstHeading">Bataclan</h1>'+
+        '<div id="bodyContent">'+
+        '<img src="images/beach.png">'+
+        '<p><b>Jones Beach State Park</b> (colloquially, "Jones Beach") is a state park of the U.S. state of New York. It is located in southern Nassau County, in the hamlet of Wantagh, on Jones Beach Island, a barrier island linked to Long Island by the Meadowbrook State Parkway, Wantagh State Parkway, and Ocean Parkway.'+
+        'The park – 6.5 miles (10.5 km) in length[5] – is renowned for its beaches (which, excepting the Zachs Bay,'+
+        'face the open Atlantic Ocean) and furnishes one of the most popular summer recreational locations for the New York metropolitan area. It is the most popular and heavily visited beach on the East Coast, with an estimated six million visitors per year.</p>' +
+        '<p>Attribution: Jones Beach State Park <a href="https://en.wikipedia.org/wiki/Jones_Beach_State_Park">'+
+        'https://en.wikipedia.org/wiki/Jones_Beach_State_Park</a> '+
+        '</p>'+
+        '</div>'+
+        '</div>';
 
 
 var infowindow2 = new google.maps.InfoWindow({

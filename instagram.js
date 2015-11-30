@@ -26,10 +26,10 @@ $(function instagram() {
 		function parseData(json){
 			console.log(json);
 
-
 			$.each(json.data,function(i,data){
 			//	html += '<p>Filter:"'+ data.filter+'"</p>';
 
+			if (i<3) {
 		 html += '<div class="instabox"> '
 			//	html += '<a target="_blank" href="http://www.instagram.com/' + data.user.username + '">'
 
@@ -48,9 +48,8 @@ $(function instagram() {
 			html += '<div class="hashtags">' + data.caption.text + '</div>'
 			html += '</div>'
 
+		}
 			});
-
-			html += '</div>'
 
 			//end row
 			// html += '</div>'
