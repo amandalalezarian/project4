@@ -25,14 +25,44 @@ $(function instagram() {
 
 		function parseData(json){
 			console.log(json);
-			console.log("insagram loaded");
+
 
 			$.each(json.data,function(i,data){
-				html += '<img src ="' + data.images.low_resolution.url + '">'
+			//	html += '<p>Filter:"'+ data.filter+'"</p>';
+
+		 html += '<div class="instabox"> '
+			//	html += '<a target="_blank" href="http://www.instagram.com/' + data.user.username + '">'
+
+			//USER
+			html += '<strong> <a target="_blank" href="http://www.instagram.com/' + data.user.username + '">' + data.user.username + '</span></a></strong>'
+
+			//picture
+			html += '<div class= "instapic"><img src ="' + data.images.low_resolution.url + '"></div>';
+
+			//likes and caption
+			html += '<div class="instagram-caption-div">'
+			html += '&#9825;  ' + data.likes.count
+			html += '<br><div class="chatbubble"></div>'
+			html += '<span class="instagram-username-caption">'
+			//html += '<strong> <a target="_blank" href="http://www.instagram.com/' + data.user.username + '">' + data.user.username + '</span></a></strong>'
+			html += '<div class="hashtags">' + data.caption.text + '</div>'
+			html += '</div>'
+
 			});
+
+			html += '</div>'
+
+			//end row
+			// html += '</div>'
+
+
+
+			//end of loop
+			// html += '</div> </div>'
 
 			console.log(html);
 			$("#instagram").append(html);
 
-		};
-	});
+		}
+
+ });

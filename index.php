@@ -4,6 +4,7 @@
   <title>Paris Attacks</title>
   <script src="http://codeorigin.jquery.com/jquery-2.0.3.min.js" type="text/javascript"></script>
   <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link href="css/styles.css" rel="stylesheet">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
   <script src="nyt.js" type="text/javascript"></script>
   <script src="instagram.js" type="text/javascript"></script>
@@ -24,6 +25,26 @@
   <div class="container">
     <div class="row">
       <h1>Paris Attacks</h1>
+      <div class="mobile-nav hidden-lg hidden-md">
+        <div id="custom-bootstrap-menu" class="navbar navbar-default " role="navigation">
+      <div class="container-fluid">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-menubuilder"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>
+              </button>
+          <div class="collapse navbar-collapse navbar-menubuilder">
+              <ul class="nav navbar-nav navbar-left">
+                  <li><a href="/">Twitter</a>
+                  </li>
+                  <li><a href="/">Instagram</a>
+                  </li>
+                  <li><a href="/">Google Maps</a>
+                  </li>
+                  <li><a href="/">New York Times Articles</a>
+                  </li>
+              </ul>
+          </div>
+      </div>
+  </div>
+  </div>
       <p>information about attacks</p>
   <!-- <a href="http://api.nytimes.com/svc/search/v2/articlesearch">Find Articles</a> -->
     <?php
