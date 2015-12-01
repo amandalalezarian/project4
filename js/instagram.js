@@ -32,7 +32,7 @@ $(function instagram() {
 			if (i<3) {
 		 html += '<div class="instabox"> '
 			//	html += '<a target="_blank" href="http://www.instagram.com/' + data.user.username + '">'
-
+			html += '<div class="instagram-unit">'
 			//USER
 			html += '<strong> <a target="_blank" href="http://www.instagram.com/' + data.user.username + '">' + data.user.username + '</span></a></strong>'
 
@@ -46,6 +46,7 @@ $(function instagram() {
 			html += '<span class="instagram-username-caption">'
 			//html += '<strong> <a target="_blank" href="http://www.instagram.com/' + data.user.username + '">' + data.user.username + '</span></a></strong>'
 			html += '<div class="hashtags">' + data.caption.text + '</div>'
+			html += '</div>'
 			html += '</div>'
 
 		}

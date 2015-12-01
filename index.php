@@ -13,11 +13,11 @@
   <link href='https://fonts.googleapis.com/css?family=Homemade+Apple' rel='stylesheet' type='text/css'>
   <link href='https://fonts.googleapis.com/css?family=Roboto+Condensed:700' rel='stylesheet' type='text/css'>
     <!--APIs-->
-  <script src="nyt.js" type="text/javascript"></script>
-  <script src="instagram.js" type="text/javascript"></script>
+  <script src="js/nyt.js" type="text/javascript"></script>
+  <script src="js/instagram.js" type="text/javascript"></script>
   <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCvXjwRiZPKaa4P17MqaRuY3AGn1MzYA2Y&callback=initMap"></script>
-  <script src="tweetLinkIt.js"></script>
-  <script src="map.js"></script>
+  <script src="js/tweetLinkIt.js"></script>
+  <script src="js/map.js"></script>
   <script>function pageComplete(){ $('.tweet').tweetLinkify();}</script>
   <style type="text/css"> html, body { height: 100%; margin: 0; padding: 0; } #map { height: 100%; }</style>
 </head>
@@ -63,7 +63,7 @@
         <h4><b>#PrayForParis</b></h4>
           <p>Used to show support and connect with others in solidarity.</p>
         <h4><b>#PorteOuverte</b></h4>
-          <p>Used to tell people they needed a safe place to go, or to advise people on the street they could offer shelter.</p>
+          <p>Used by those in need of a safe place to go, or to advise people on the street they could offer shelter.</p>
     </div>
   <!-- <a href="http://api.nytimes.com/svc/search/v2/articlesearch">Find Articles</a> -->
     <div id="twittersection" class="lines">
@@ -129,32 +129,22 @@ $i = -1;
               $tweetMedia3 = $mediaArray[3];
               $mediaResize = $tweetMedia['sizes']['thumb']['w'];
 
-        echo "<div class='twitter-tweet tweet'>" . $items['text'] . "'</div>'";
         echo "<div class='twitter-div'>";
         echo "<div class='tweet-div'><div class='float-left twitpic'><a target='_blank' href='http://www.twitter.com/" . $userArray['screen_name'] . "'><img class='twitter-pic' target='_blank' src='" . $userArray['profile_image_url'] . "'></a></div>";
         echo "<a target='_blank' href='http://www.twitter.com/" . $userArray['screen_name'] . "'><span class='name bold'>" . $userArray['name'] . "</span>   </br><span class='handle'>@" . $userArray['screen_name'] . "</span></a>  <span class='font-small'>&sdot; ";
         echo $date->format( 'M jS' ) . "</span></br>";
         echo "<div class='tweet'>" . $items['text'] . "</div>";
         echo "<a target='_blank' href='" . $tweetMedia['expanded_url'] . "'><img class='twitter-media' target='_blank' width='100%' src='" . $tweetMedia['media_url'] . "'></a>";
-        echo "<a target='_blank' href='" . $tweetMedia1['expanded_url'] . "'><img class='twitter-media' target='_blank' width='100%' src='" . $tweetMedia1['media_url'] . "'></a>";
-        echo "<a target='_blank' href='" . $tweetMedia2['expanded_url'] . "'><img class='twitter-media' target='_blank' width='100%' src='" . $tweetMedia2['media_url'] . "'></a>";
-        echo "<a target='_blank' href='" . $tweetMedia3['expanded_url'] . "'><img class='twitter-media' target='_blank' width='100%' src='" . $tweetMedia3['media_url'] . "'></a>";
         echo "<div class='tweet-options'>";
         echo "<div class='row row-height'>";
-        echo "<div class='col-md-8 col-xs-8'><a target='_blank' href='" . $tweetMedia['expanded_url'] . "'><p class='expand'>Expand</p></a></div>";
-        echo "<div class='col-md-4 col-xs-4'>";
-        echo "<a target='_blank' href='https://twitter.com/intent/tweet?in_reply_to=" . $items['id'] . "'><div class='reply twitter-intent'></div></a>";
-        echo "<a target='_blank' href='https://twitter.com/intent/retweet?tweet_id=" . $items['id'] . "'><div class='retweet twitter-intent'></div></a>";
-        echo "<a target='_blank' href='https://twitter.com/intent/favorite?tweet_id=" . $items['id'] . "'><div class='favorite twitter-intent'></div></a>";
         echo "</div></div></div>";
-        echo "<span class='border'></span></div>";
         echo "</div>";
 
       }
 
         }
 
-      echo "<script>pageComplete();</script>;"
+      echo "<script>pageComplete()</script>"
     ?>
   </div>
     <!--Instagram-->
@@ -176,7 +166,7 @@ $i = -1;
         <span><img class="sections" width="20%" src="images/maps.png"><h3>GOOGLE MAPS</h3></span>
       </div>
         <div>
-          <p>Click on the map markers to read about each attack area</p>
+          <p>Click on the map markers to learn about each attack area moment by moment:</p>
         </div>
           <div id="map"></div>
         </div>
@@ -192,7 +182,7 @@ $i = -1;
         <div id="nyt"></div>
       </div>
       <div class="footer">
-        Amanda Lalezarian JOMC 586 Final December 2015
+        Amanda Lalezarian. JOMC 586 Final. December 2015
       </div>
 </div>
   <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>

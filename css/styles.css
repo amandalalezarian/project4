@@ -59,6 +59,11 @@ p {
   padding-right: 10px;
 }
 
+.tweet-div, .instagram-unit {
+  border-bottom: 1px solid gray;
+  padding: 10px;
+}
+
 .name {
   font-weight: bold;
 }
@@ -71,12 +76,12 @@ p {
 
 .sections {
   float: center;
+  padding-top: 5px;
 }
 
 .footer {
-  font-size: 8px;
+  font-size: 10px;
   text-align: center;
-
 }
 
 /*Mobile Menu*/
