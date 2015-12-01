@@ -1,54 +1,121 @@
-h1, h3, h4 {
+.mainlogo {
+  float: left;
+  margin: 10px;
+}
+
+.intro {
+  text-align: center;
+  border-bottom: 1px solid black;
+}
+
+.lines {
+  border-bottom: 1px solid black;
+  margin-top: 10px;
+  padding-bottom: 15px;
+}
+
+.center {
+  text-align: center;
+}
+
+.logos {
+  padding-right: 10px;
+  margin-left: 10px;
+  display: inline;
+  float: left;
+}
+
+.container {
+  margin-left: 10px;
+}
+
+.header {
+  display: inline;
+}
+
+h1 {
+    font-family: 'Homemade Apple', cursive;
+    font-size: 40px;
+}
+
+h3 {
+  font-family: 'Roboto Condensed', sans-serif;
+}
+
+h4 {
   font-family: "Georgia";
     font-style: italic;
 }
 
-.header {
-  margin-left: 20px;
-}
-
 p {
   font-family: "Georgia";
-  font-size: 16px;
+  font-size: 20px;
+  text-align: center;
+}
+
+/*Twitter*/
+.twitpic {
+  float: left;
+  padding-right: 10px;
+}
+
+.name {
+  font-weight: bold;
+}
+
+.header {
+  margin-left: 20px;
+  font-size: 13px;
+  font-family: "Georgia serif";
+}
+
+.sections {
+  float: center;
+}
+
+.footer {
+  font-size: 8px;
+  text-align: center;
+
 }
 
 /*Mobile Menu*/
 
 #custom-bootstrap-menu.navbar-default .navbar-brand {
-    color: rgba(51, 204, 102, 1);
+    color: rgba(119, 119, 119, 1);
 }
 #custom-bootstrap-menu.navbar-default {
-    font-size: 14px;
-    background-color: rgba(22, 72, 114, 1);
+    font-size: 20px;
+    background-color: rgba(248, 248, 248, 1);
     border-width: 1px;
     border-radius: 4px;
 }
 #custom-bootstrap-menu.navbar-default .navbar-nav>li>a {
-    color: rgba(51, 204, 102, 1);
-    background-color: rgba(22, 72, 114, 1);
+    color: rgba(119, 119, 119, 1);
+    background-color: rgba(248, 248, 248, 0);
 }
 #custom-bootstrap-menu.navbar-default .navbar-nav>li>a:hover,
 #custom-bootstrap-menu.navbar-default .navbar-nav>li>a:focus {
-    color: rgba(33, 154, 248, 1);
-    background-color: rgba(22, 72, 114, 1);
+    color: rgba(51, 51, 51, 1);
+    background-color: rgba(248, 248, 248, 0);
 }
 #custom-bootstrap-menu.navbar-default .navbar-nav>.active>a,
 #custom-bootstrap-menu.navbar-default .navbar-nav>.active>a:hover,
 #custom-bootstrap-menu.navbar-default .navbar-nav>.active>a:focus {
-    color: rgba(33, 154, 248, 1);
-    background-color: rgba(51, 204, 102, 1);
+    color: rgba(85, 85, 85, 1);
+    background-color: rgba(231, 231, 231, 1);
 }
 #custom-bootstrap-menu.navbar-default .navbar-toggle {
-    border-color: #33cc66;
+    border-color: #ddd;
 }
 #custom-bootstrap-menu.navbar-default .navbar-toggle:hover,
 #custom-bootstrap-menu.navbar-default .navbar-toggle:focus {
-    background-color: #33cc66;
+    background-color: #ddd;
 }
 #custom-bootstrap-menu.navbar-default .navbar-toggle .icon-bar {
-    background-color: #33cc66;
+    background-color: #888;
 }
 #custom-bootstrap-menu.navbar-default .navbar-toggle:hover .icon-bar,
 #custom-bootstrap-menu.navbar-default .navbar-toggle:focus .icon-bar {
-    background-color: #164872;
+    background-color: #888;
 }
